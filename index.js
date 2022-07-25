@@ -1,12 +1,11 @@
 const express = require('express')
 const app = express()
 const port = 3080
-const { createProxyMiddleware } = require('http-proxy-middleware');
 const proxy = require('express-http-proxy');
 
 const proxyConfig = {
   '/': {
-   target: 'https://github.com/',
+   target: 'https://www.google.com',
   },
  };
   
